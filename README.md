@@ -24,5 +24,9 @@ Download Miniconda2 - https://docs.conda.io/en/latest/miniconda.html
 
 - Go to **kraken** directory for taxa based annotations 
 - Go to **superfocus** directory for function based annotations 
+
+## Assembly 
+
+- Go to **megahit** directory for assembly 
   
 

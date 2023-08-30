@@ -1,6 +1,14 @@
 #git based 
 trimnami/.snakemake
+trimnami/trimnami.out
 
+megahit/biofilm_R1.fastq.gz
+megahit/biofilm_R2.fastq.gz
+megahit/megahit-2219579.err.txt
+megahit/megahit-2219579.out.txt
+megahit/megahit_crossAssembly_biofilm
+megahit/water_R1.fastq.gz
+megahit/water_R2.fastq.gz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
