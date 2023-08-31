@@ -18,13 +18,13 @@
 
 ##megahit assembly for groups, copy paste the below command for each group - make sure to change the input and output file names
 ##Group1 
-megahit -1 biofilm_R1.fastq.gz -2 biofilm_R2.fastq.gz -o megahit_crossAssembly_biofilm  
-kmer=$(head -1 megahit_crossAssembly_biofilm | sed 's/>//' | sed 's/_.*//')
+#megahit -1 biofilm_R1.fastq.gz -2 biofilm_R2.fastq.gz -o megahit_crossAssembly_biofilm  
+kmer=$(head -1 megahit_crossAssembly_biofilm/final.contigs.fa | sed 's/>//' | sed 's/_.*//')
 megahit_toolkit contig2fastg $kmer megahit_crossAssembly_biofilm/final.contigs.fa > megahit_crossAssembly_biofilm/final.contigs.fastg
 Bandage reduce megahit_crossAssembly_biofilm/final.contigs.fastg megahit_crossAssembly_biofilm/final.contigs.gfa 
 
 ##Group2
-megahit -1 water_R1.fastq.gz -2 water_R2.fastq.gz -o megahit_crossAssembly_water  
+#megahit -1 water_R1.fastq.gz -2 water_R2.fastq.gz -o megahit_crossAssembly_water  
 kmer=$(head -1 megahit_crossAssembly_water | sed 's/>//' | sed 's/_.*//')
 megahit_toolkit contig2fastg $kmer megahit_crossAssembly_water/final.contigs.fa > megahit_crossAssembly_water/final.contigs.fastg
 Bandage reduce megahit_crossAssembly_water/final.contigs.fastg megahit_crossAssembly_water/final.contigs.gfa 
