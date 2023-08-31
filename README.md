@@ -28,5 +28,6 @@ Download Miniconda2 - https://docs.conda.io/en/latest/miniconda.html
 ## Assembly 
 
 - Go to **megahit** directory for assembly 
+- Go to **spades** directory for assembly
   
 
