@@ -9,7 +9,7 @@ megahit/megahit_crossAssembly_water
 megahit/water_R1.fastq.gz
 megahit/water_R2.fastq.gz
 spades/biofilm_R1.fastq.gz
-spades/biofilm_Rw.fastq.gz
+spades/biofilm_R2.fastq.gz
 spades/water_R1.fastq.gz
 spades/water_R2.fastq.gz
 spades/spades_crossAssembly_biofilm
