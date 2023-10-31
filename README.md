@@ -29,5 +29,9 @@ Download Miniconda2 - https://docs.conda.io/en/latest/miniconda.html
 
 - Go to **megahit** directory for assembly 
 - Go to **spades** directory for assembly
-  
+
+## Binning 
+
+- Go to **metacoag** directory
+- Go to **vamb** directory
 
