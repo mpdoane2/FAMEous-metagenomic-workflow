@@ -1,6 +1,5 @@
-#
-
-"""
+#The below R commands will merge outputs to from several processes into a single output for comparing the number of reads from metagenomes that contribute to identified bins. 
+#R Version 4.2.1
 
 library(readxl)
 library(dplyr)
@@ -8,8 +7,10 @@ library(tidyr)
 
 #CoverM output (generate read count for contigs)
 mag_counts <- read.table ("sawshark_mag_counts.tsv", sep = "\t", header = T)
+
 #GTDBtk classify output
 bin_taxa <- read.table ("../MAGs/sawshark_gtdbtk.bac120.summary.tsv", sep = "\t", header = T)
+
 #CheckM2 output
 bin_quality <- read.table ("../MAGs/sawshark_quality_report.tsv", sep = "\t", header = T)
 
