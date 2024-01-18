@@ -17,7 +17,7 @@ Download Miniconda2 - https://docs.conda.io/en/latest/miniconda.html
 
 ## Quality control 
 
-- If you wish to just run quality control to remove the low quality reads, the goto **Prinseq** directory for more instructions 
+- If you wish to just run quality control to remove the low quality reads, the go to **Prinseq** directory for more instructions 
 - For human DNA or other host removal steps followed by prinseq - goto to **Trimnami** directory for more instructions
 
 ## Read based taxonomic annotation 
