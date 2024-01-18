@@ -1,5 +1,6 @@
-# FAMEous-metagenomic-workflow
+For the current implementation of the FAME metagenomic workflow go to: https://github.com/linsalrob/atavide_lite/blob/main/slurm/README.md 
 
+# FAMEous-metagenomic-workflow
 This is a step-by-step workflow used to analyze metagenomes. 
 For paired end reads only 
 
@@ -14,24 +15,20 @@ Currently this directory has two test metagenomes
 ## Pre-requisite software 
 Download Miniconda2 - https://docs.conda.io/en/latest/miniconda.html
 
-
 ## Quality control 
+- If you wish to just run quality control to remove the low quality reads, go to **Prinseq** directory for more instructions 
+- For human DNA or other host removal steps followed by prinseq - go to **Trimnami** directory for more instructions
 
-- If you wish to just run quality control to remove the low quality reads, the go to **Prinseq** directory for more instructions 
-- For human DNA or other host removal steps followed by prinseq - goto to **Trimnami** directory for more instructions
-
-## Read based taxonomic annotation 
-
+## Single read annotation
+- Go to **MMseqs2** directory for taxonomic and functional based annotation
 - Go to **kraken** directory for taxa based annotations 
-- Go to **superfocus** directory for function based annotations 
+- Go to **superfocus** directory for function based annotations
 
 ## Assembly 
-
 - Go to **megahit** directory for assembly 
 - Go to **spades** directory for assembly
 
 ## Binning 
-
 - Go to **metacoag** directory
 - Go to **vamb** directory
 
