@@ -1,5 +1,20 @@
 For the current implementation of the FAME metagenomic workflow go to: https://github.com/linsalrob/atavide_lite/blob/main/slurm/README.md 
 
+Outputs files from the above implementation:
+  1) fastq/: Demultiplexed raw fastq files from the sequencing facility
+  2) fastq_fastp/: These are the tag cleaned files
+  3) fasta/ fasta: Files converted from Fastq_fastp/ fastq files for mmseqs
+  4) mmseq/: Results of mmseqs using the UniRef50 database. These are the raw outputs from mmseqs for each individual      sample. These files include both the taxonomimc and gene function annotations. If you wish to link the taxonomic      and gene function annotations (ie read # X corresondes with taxa A and gene function R), the linking information      is in <sample_name>_tophit_report_subsystems.gz.
+  5) Taxonomy/: parsed results from mmseqs output converting the Kraken2 output into a table format of taxonomic 
+     hierarchical categorisation by samples. Number indicate counts of reads assigned to each taxa.
+  6) subsystems/: parsed results from mmseqs converting the subsystem assignments into a table format with subsystem 
+     hierarchies by samples. Numbers indicate counds of reads assigned to each subsystem
+       - Samples are either normalized by 'total number of reads in sample' or by the 'total number of reads assigned 
+         to a function' -- each are multipled by 1,000,0000
+       - It is unclear which way is correct -- try to analyse and see if the results change.
+8) megahit/: These are the constructed contigs from the samples
+9) vamb/: The results of binning the contigs can be found in this directory.
+
 # FAMEous-metagenomic-workflow
 This is a step-by-step workflow used to analyze metagenomes. 
 For paired end reads only 
