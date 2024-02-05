@@ -9,8 +9,10 @@ Outputs files from the above implementation:
      hierarchical categorisation by samples. Number indicate counts of reads assigned to each taxa.
   6) subsystems/: parsed results from mmseqs converting the subsystem assignments into a table format with subsystem 
      hierarchies by samples. Numbers indicate counds of reads assigned to each subsystem
-       - Samples are either normalized by 'total number of reads in sample' or by the 'total number of reads assigned 
-         to a function' -- each are multipled by 1,000,0000
+       - three sets of outputs are included:
+            A) <subsystem_level>_norm_all.tsv: values are normalized by total number of reads in library
+            B) <subsystem_level>_norm_ss.tsv: values are normalized by the total number of reads with a hit to a                     subystem
+            C) <subsystem_level>_raw.tsv: values are raw counts
        - It is unclear which way is correct -- try to analyse and see if the results change.
 8) megahit/: These are the constructed contigs from the samples
 9) vamb/: The results of binning the contigs can be found in this directory.
