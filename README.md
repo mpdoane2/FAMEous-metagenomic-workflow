@@ -5,9 +5,16 @@ Outputs files from the above implementation:
   2) fastq_fastp/: These are the tag cleaned files
   3) fasta/ fasta: Files converted from Fastq_fastp/ fastq files for mmseqs
   4) mmseq/: Results of mmseqs using the UniRef50 database. These are the raw outputs from mmseqs for each individual      sample. These files include both the taxonomimc and gene function annotations. If you wish to link the taxonomic      and gene function annotations (ie read # X corresondes with taxa A and gene function R), the linking information      is in <sample_name>_tophit_report_subsystems.gz.
-  5) Taxonomy/: parsed results from mmseqs output converting the Kraken2 output into a table format of taxonomic 
+  * Column heading information for mmseqs output can be found here: https://github.com/soedinglab/MMseqs2/issues/390
+  * The first five columns include:
+        (1) Target identifier 
+        (2) Number of sequences aligning to target
+        (3) Unique coverage of target uniqueAlignedResidues / totalLength
+        (4) Target coverage alignedResidues / totalLength
+        (5) Average sequence identity
+  6) Taxonomy/: parsed results from mmseqs output converting the Kraken2 output into a table format of taxonomic 
      hierarchical categorisation by samples. Number indicate counts of reads assigned to each taxa.
-  6) subsystems/: parsed results from mmseqs converting the subsystem assignments into a table format with subsystem 
+  7) subsystems/: parsed results from mmseqs converting the subsystem assignments into a table format with subsystem 
      hierarchies by samples. Numbers indicate counds of reads assigned to each subsystem
        - three sets of outputs are included:
             A) <subsystem_level>_norm_all.tsv: values are normalized by total number of reads in library
